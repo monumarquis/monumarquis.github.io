@@ -1,0 +1,310 @@
+.type { 
+
+    font-family: sans-serif; 
+    font-weight:800; 
+    font-size:40px; 
+    text-align: center; 
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media only screen and (min-width: 988px){
+  .julie{
+    margin-right: 0px;
+  }
+  .card{
+    
+    position: relative;
+    background: rgb(247, 244, 244);
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    35px 35px 20px  rgba(0, 0, 0,  0.05),
+    35px 35px 20px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9) ;
+    padding: 100px;
+    /* overflow: hidden;  */
+    animation: square_to_circle 8s .83s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    transition: 0.9s ease-in-out;
+  }
+  /* project csss */
+/* .card:nth-child(1){
+  border-radius: 53% 47% 46% 54% / 48% 62% 38% 52%  ;
+}
+.card:nth-child(2){
+  border-radius: 69% 31% 63% 37% / 36% 41% 59% 64%;
+}
+.card:nth-child(3){
+  border-radius: 51% 49% 46% 54% / 54% 16% 84% 46% ;
+}
+.card:nth-child(4){
+  border-radius: 69% 31% 46% 54% / 38% 75% 25% 62% ;
+} */
+.card:hover{
+  border-radius: 50%;
+}
+.card::before{
+  content: ' ';
+  position: absolute;
+  top: 120px;
+  left: 60px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.card::after{
+  content: ' ';
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+footer{
+  position: relative;
+  padding-top: 30px;
+
+}
+footer .wave{
+position: absolute;
+top:-200px;
+left: 0;
+width: 100%;
+height: 200px;
+background: url(/src/wave.svg);
+background-size: 1000px * 1000px;
+}
+footer .wave#wave1{
+z-index: 10;
+opacity: 1;
+bottom: 0;
+animation: animatewave 4s linear infinite ;
+}
+footer .wave#wave2{
+z-index: 9;
+opacity: 0.6;
+bottom: 10px;
+animation: animatewave_02 3s linear infinite ;
+}
+footer .wave#wave3{
+z-index: 10;
+opacity: 0.5;
+bottom: 15px;
+animation: animatewave 3s linear infinite ;
+}
+footer .wave#wave4{
+z-index: 9;
+opacity: 0.8;
+bottom: 20px;
+animation: animatewave_02 4s linear infinite ;
+}
+@keyframes animatewave {
+0%{
+  background-position-x: 2000px;
+}
+100%{
+  background-position-x: 0px;
+}
+}
+@keyframes animatewave_02 {
+0%{
+  background-position-x: 0px;
+}
+100%{
+  background-position-x: 2000px;
+}
+}
+}
+
+
+@media only screen and (min-width: 600px){
+  .julie{
+    margin-right: 0px;
+  }
+  .card{
+    position: relative;
+    background: rgb(247, 244, 244);
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    35px 35px 20px  rgba(0, 0, 0,  0.05),
+    35px 35px 20px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9) ;
+    padding: 100px;
+    /* overflow: hidden;  */
+    animation: square_to_circle 8s .83s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    transition: all 0.5s ease-in-out;
+  }
+  /* project csss */
+
+.card:hover{
+  border-radius: 50%;
+}
+.card::before{
+  content: ' ';
+  position: absolute;
+  top: 120px;
+  left: 60px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.card::after{
+  content: ' ';
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+}
+
+
+
+
+
+
+
+
+/* contact css */
+.lk{
+  z-index: 9999;
+}
+.circle{
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.circle .toggle{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background:#fff ;
+  border-radius: 50%;
+  box-shadow: 0 3px 4px rgb(173, 92, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(173, 92, 92);
+  font-size: 2em;
+  cursor: pointer;
+  transition: 1.25s;
+}
+
+.circle.active .toggle{
+transform: rotate(360deg);
+box-shadow: 0 6px 8px rgba(0, 0, 0,  0.15),0 0 0 2px #333 ,
+0 0 0 8px #fff;
+}
+.circle li{
+  list-style: none;
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+  transform: rotate(calc(360deg/8 * var(--i)));
+  transform-origin: 140px;
+  scale: 0;
+  transition-delay: calc(0.05s * var(--i));
+}
+
+.circle.active li{
+  scale: 1;
+}
+
+.circle li a{
+  position: relative;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.75em;
+  color: var(--clr);
+  box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+  transform: rotate(calc(360deg/-8 * var(--i)));
+  transition: 0.5s;
+}
+.circle li:hover a{
+  font-size: 2.5em;
+  box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;
+}
+
+
+/* text css */
+.papa{
+  cursor: pointer;
+}
+.papa span{
+  transition: 0.5s;
+}
+.papa:hover span:nth-child(1){
+margin-right: 5px;
+}
+.papa:hover span:nth-child(2){
+  margin-left: 10px;
+  }
+
+  .papa:hover span{
+   color:#fff;
+   text-shadow: 0 0 10px #fff,
+   0 0 20px #fff,
+   0 0 40px #fff,
+   0 0 80px #fff,
+   0 0 120px #fff,
+   0 0 160px #fff,
+   0 0 180px #fff
+   ;
+  }
+.scooby{
+  position: relative;
+}
+.scooby:hover img{
+opacity: 0;
+cursor: pointer;
+}
+.joke{
+  position: absolute;
+  top: 20px;
+  left: 200px;
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+  
+}
+
+
+::-webkit-scrollbar-track{
+  background: rgb(255, 255, 255);
+  margin-left: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+
+  height: 50px;
+  background: rgb(77, 75, 75);
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(116, 116, 116);
+}
