@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6213f877.css",
-    "main.js": "/static/js/main.ca2f59f1.js",
+    "main.css": "/static/css/main.05eef222.css",
+    "main.js": "/static/js/main.33d755e4.js",
     "static/media/p3.png": "/static/media/p3.bf00746e19e0078f4fb6.png",
     "static/media/p2.png": "/static/media/p2.7030a946b66e0c31dde0.png",
     "static/media/Image.gif": "/static/media/Image.dad52f04d321534e210e.gif",
@@ -21,7 +21,6 @@
     "static/media/HTML5.png": "/static/media/HTML5.89d8a3ef32f80ac5674e.png",
     "static/media/services.svg": "/static/media/services.0d43785bd1f41e4d0371.svg",
     "static/media/Git.png": "/static/media/Git.c2a74b74654e419ef0c6.png",
-    "static/media/portfolio.svg": "/static/media/portfolio.bff8b39169bade93c32b.svg",
     "static/media/Express.png": "/static/media/Express.749aaa372a7cbee1b8f6.png",
     "static/media/testimonials.svg": "/static/media/testimonials.7b59b974ba9e396f2d8e.svg",
     "static/media/contact.svg": "/static/media/contact.acdd342ba1db0f98c7cd.svg",
@@ -29,11 +28,11 @@
     "static/media/about.svg": "/static/media/about.192e39ff229e6eb06083.svg",
     "index.html": "/index.html",
     "static/media/wave.svg": "/static/media/wave.2a1bb9847b4e92c9fb5e.svg",
-    "main.6213f877.css.map": "/static/css/main.6213f877.css.map",
-    "main.ca2f59f1.js.map": "/static/js/main.ca2f59f1.js.map"
+    "main.05eef222.css.map": "/static/css/main.05eef222.css.map",
+    "main.33d755e4.js.map": "/static/js/main.33d755e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.6213f877.css",
-    "static/js/main.ca2f59f1.js"
+    "static/css/main.05eef222.css",
+    "static/js/main.33d755e4.js"
   ]
 }
