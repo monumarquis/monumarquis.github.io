@@ -21,7 +21,7 @@ const BackTopBtn = () => {
         <div>
            <button
           onClick={() => scrollToTop()}
-          className=' animate-bounce  bg-accent lk hover:bg-accent-hover text-white w-12 h-12 rounded-full fixed right-24 bottom-24 cursor-pointer flex justify-center items-center transition-all '
+          className=' animate-bounce  bg-[#de4958] lk hover:bg-accent-hover text-white w-12 h-12 rounded-full fixed right-10 bottom-10 cursor-pointer flex justify-center items-center transition-all '
         >
           <BsHandIndexThumb className='w-6 h-6' />
         </button>

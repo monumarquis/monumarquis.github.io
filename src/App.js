@@ -10,26 +10,30 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackTopBtn from "./components/BackTopBtn";
 import Github from "./components/Github";
+import Connection from "./components/Connection";
+import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
   return (
     <div className="bg-white relative">
+      <CustomCursor />
       <Header />
       <Hero />
       <About />
       <Skills />
       <Portfolio />
-      <Github/>
-      
-       {/* <Brands /> */}
-      
-      
-      
+      <Github />
+
+      {/* <Brands /> */}
+
+
+
       {/* <Services /> */}
       {/* <Testimonials /> */}
       <Contact />
       <Footer />
-      <BackTopBtn /> 
+      <BackTopBtn />
+      <Connection />
     </div>
   );
 };

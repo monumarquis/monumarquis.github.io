@@ -22,7 +22,7 @@ const Header = () => {
         bg ? "bg-tertiary h-20" : "h-24"
       } flex items-center fixed top-0 w-full text-white transition-all duration-300 lk`}
     >
-      <div className=" scale-up-hor-center container mx-auto h-full flex items-center justify-between ">
+      <div className="scale-up-hor-center container mx-auto h-full flex items-center justify-between ">
         {/* logo */}
         <a className="w-20" href="#">
           <img  src={Logo} alt="Logo" />

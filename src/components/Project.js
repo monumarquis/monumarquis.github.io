@@ -2,15 +2,15 @@ import React from 'react';
 import '.././App.css'
 const Project = ({ item }) => {
   return (
-    <div key={item.id} className='flex flex-col items-center text-center  bg-white rounded-2xl card mb-20 ' >
+    <div key={item.id} className='flex flex-col items-center text-center   bg-white rounded-2xl card mb-20 ' >
       
-      <div className='mb-8 box-content h-200 w-200  '>
+      <div className='transform mb-8 box-content h-200 w-200 transition duration-500 hover:scale-125'>
         <img className='rounded-2xl h-200 w-200' src={item.image} alt='' />
       </div>
       <p className='capitalize text-tertiary text-sm mb-3 font-semibold'>{item.category}</p>
       <h3 className='text-2xl font-semibold capitalize mb-3 text-secondary '>{item.name}</h3>
       <p className='text-secondary max-w-md '>
-    {item.desc}
+        {item.desc}
       </p>
       <div className='flex flex-coloumn items-center text-center  mt-10'>
      

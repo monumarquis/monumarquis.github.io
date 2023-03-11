@@ -1,20 +1,25 @@
 import React, { useEffect } from 'react';
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 // import components
 import Projects from './Projects';
+import VanillaTilt from 'vanilla-tilt';
+import { Box, Highlight, Text } from '@chakra-ui/react';
+const options = {
+  scale: 1.1,
+  speed: 1000,
+  max: 30
+};
 
 const Portfolio = () => {
- 
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <section id='portfolio' className=' section bg-white min-h-[1400px]'  >
-      <div className='container mx-auto'>
+      <div className='container mx-auto' data-aos="fade-up" data-aos-duration="1600">
         <div className='flex flex-col items-center text-center'>
-          <h2 className=' bg-primary p-10 w-2xl section-title before:content-portfolio relative before:absolute before:opacity-40 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block'>
-            My Top Projects
-          </h2>
-          <p className='subtitle '>
-           Have a look in  my top projects 
-          </p>
+          <Tilt options={options} />
         </div>
         <Projects />
       </div>
@@ -22,4 +27,24 @@ const Portfolio = () => {
   );
 };
 
+
+function Tilt(props) {
+  const { options } = props;
+  const tilt = React.useRef(null);
+
+  useEffect(() => {
+    VanillaTilt.init(tilt.current, options);
+  }, [options]);
+
+  return <Box w={"50%"} ref={tilt} m="auto" >
+    <Text color="#000" fontWeight='bold' mb="20" mt="15" fontSize={["25","25","40","40","40"]} textAlign={"center"} >
+      <Highlight
+        query={['My', 'Projects']}
+        styles={{ color: 'red.400' }}
+      >
+        My Top Projects
+      </Highlight>
+    </Text>
+  </Box>
+}
 export default Portfolio;

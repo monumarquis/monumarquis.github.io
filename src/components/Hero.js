@@ -1,7 +1,6 @@
 import React from "react";
 import "./common.css";
 import "aos/dist/aos.css";
-import Monu from "../assets/img/Monu.png";
 import Type from "./Type";
 
 const Hero = () => {

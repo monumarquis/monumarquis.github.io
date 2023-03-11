@@ -12,9 +12,12 @@
 }
 
 *{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 @media only screen and (min-width: 988px){
+  .skillgrid{
+    grid-template-columns: repeat(5,1fr);
+  }
   .julie{
     margin-right: 0px;
   }
@@ -127,6 +130,9 @@ animation: animatewave_02 4s linear infinite ;
 
 
 @media only screen and (min-width: 600px){
+  .skillgrid{
+    grid-template-columns: repeat(3,1fr);
+  }
   .julie{
     margin-right: 0px;
   }
@@ -174,10 +180,11 @@ animation: animatewave_02 4s linear infinite ;
 
 
 
-
-
-
-
+.hover_3d{
+  transition: transform 0.1s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
 
 /* contact css */
 .lk{
@@ -289,22 +296,38 @@ cursor: pointer;
 }
 
 ::-webkit-scrollbar{
-  width: 7px;
-  
+  width: 5px;
+  padding-right: 5px;
 }
 
 
 ::-webkit-scrollbar-track{
   background: rgb(255, 255, 255);
   margin-left: 5px;
+  
 }
 
 ::-webkit-scrollbar-thumb{
 
   height: 50px;
-  background: rgb(77, 75, 75);
+  background: rgb(197, 51, 51);
   border-radius: 25px;
 }
 ::-webkit-scrollbar-thumb:hover{
-  background: rgb(116, 116, 116);
+  background: rgb(230, 86, 86);
+}
+
+.boxShadow{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.boxShadow1{
+  box-shadow: rgba(148, 133, 133, 0.17) 0px -23px 25px 0px inset, rgba(110, 98, 98, 0.15) 0px -36px 30px 0px inset, rgba(122, 117, 117, 0.1) 0px -79px 40px 0px inset, rgba(156, 148, 148, 0.06) 0px 2px 1px, rgba(138, 63, 63, 0.09) 0px 4px 2px, rgba(128, 120, 120, 0.09) 0px 8px 4px, rgba(151, 135, 135, 0.09) 0px 16px 8px, rgba(73, 66, 66, 0.09) 0px 32px 16px;
+}
+
+.skillgrid{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  margin: auto;
 }

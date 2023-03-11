@@ -6,6 +6,7 @@ import { projectsData } from '../data';
 // import components
 import Project from './Project';
 
+
 const Projects = () => {
   const [item, setItem] = useState({ name: 'all' });
   const [projects, setProjects] = useState([]);
@@ -60,5 +61,8 @@ const Projects = () => {
     </div>
   );
 };
+
+
+
 
 export default Projects;

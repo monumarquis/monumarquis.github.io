@@ -64,13 +64,12 @@ const NavMobile = () => {
         variants={ulVariants}
         initial='hidden'
         animate={isOpen ? 'visible' : ''}
-        className={`${
-          isOpen ? 'right-0' : '-right-full'
-        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 pt-40`}
+        className={`${isOpen ? 'right-0' : 'right-full'
+          } fixed top-10 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 pt-40 mb-10`}
       >
         <div
           onClick={() => setIsOpen(false)}
-          className='cursor-pointer absolute top-6 right-5 '
+          className='cursor-pointer absolute top-0 right-5 '
         >
           <XIcon className='w-8 h-8 hover:text-accent' />
         </div>
@@ -90,6 +89,9 @@ const NavMobile = () => {
             </li>
           );
         })}
+        <li className="text-white hover:text-accent text-xl cursor-pointer mb-10" >
+          <a href="https://drive.google.com/file/d/18Pxv_xnL2onLThvIK8ofNl5vKKuN1DND/view" target="_blank">Resume</a>
+        </li>
         <Socials />
       </motion.ul>
     </nav>
